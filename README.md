@@ -4,7 +4,7 @@ A framework for temporal abstraction
 in reinforcement learning](http://www-anw.cs.umass.edu/~barto/courses/cs687/Sutton-Precup-Singh-AIJ99.pdf). The [Option-Critic Architecture](https://arxiv.org/pdf/1609.05140.pdf) provides a method for end-to-end learning of options including option policies, termination condition and policy over options.
 
 # Getting Started
-The repo contains code for running SOC framework on tabular and continous state-space environments.
+The repo contains code for running SOC framework on tabular and continous state-space environments. For experiments in ALE see [repo](https://github.com/kkhetarpal/safe_a2oc_delib)
 
 # Prerequisites
 ```
@@ -36,3 +36,4 @@ Use the following PolttingPolicies.ipynb (iPython Notebook) for visualization of
 
 # Plotting Return plots
 Use the following ReturnPlots.ipynb (iPython Notebook) for visualization of return plots in Frozen FourRoom Env and CartPole Env.
+
