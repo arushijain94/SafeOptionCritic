@@ -95,11 +95,10 @@ wwwwwwwwwwwww
         state = self.tostate[self.currentcell]
         
         if self.frozen[self.currentcell]:
-            reward = np.random.uniform(low=-15.0, high=15.0)
+            reward = np.random.normal(loc=0.0, scale=15.0) # Drawing reward from a normal distribution
         elif state == self.goal:
             reward = 50
 
-        
         done = state == self.goal
         return state, reward, done, None
 

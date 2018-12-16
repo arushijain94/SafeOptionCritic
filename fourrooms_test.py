@@ -96,7 +96,7 @@ wwwwwwwwwwwww
 
         if self.frozen[self.currentcell]:
             #frozen state
-            reward = np.random.uniform(low=-15.0, high=15.0)
+            reward = np.random.normal(loc=0.0, scale=15.0)
         elif state == self.goal:
             reward = 50 #goal state reward
         #remaining cases, reward is 0
