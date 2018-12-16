@@ -16,18 +16,18 @@ The repo contains code for running SOC framework on tabular and continous state-
 
 # Environments Used
 * Frozen FourRoom Env [fourrooms.py]
-* GYM CartPole Env
+* Puddle-World Env [puddlesimple.py]
 
 # Training
 The following command is used for training Tabular (FrozenFourRoom Environment)
 ```
-python FourRoomSOC.py --nruns 150 --nepisodes 2000 --beta 0.05 --controllability True
+python FourRoomSOC.py --nruns 50 --nepisodes 500 --beta 0.1 --temperature 0.001 --lr_critic 0.5 --lr_intra 0.01 --lr_term 0.1
 ```
 Use deafult parameters in code for best setting
 
-The following command is used for training Continuous State Space Env : GYM Cartpole Env
+The following command is used for training Continuous State Space Env : Puddle-World Env
 ```
-python CartPoleSOC.py --nruns 50 --nepisodes 2000 --beta 0.25 --controllability True
+python PuddleSOC.py --nruns 50 --nepisodes 200 --beta 0.015 --temperature 0.1 --lr_critic 0.5 --lr_intra 0.05 --lr_term 0.05
 ```
 
 # Plotting FourRoom Policies and Option Termination
@@ -35,5 +35,5 @@ python CartPoleSOC.py --nruns 50 --nepisodes 2000 --beta 0.25 --controllability 
 Use the following PolttingPolicies.ipynb (iPython Notebook) for visualization of option policies and option termination in Frozen FourRoom Env.
 
 # Plotting Return plots
-Use the following ReturnPlots.ipynb (iPython Notebook) for visualization of return plots in Frozen FourRoom Env and CartPole Env.
+Use the following ReturnPlots.ipynb (iPython Notebook) for visualization of return plots in Frozen FourRoom Env and Puddle-World Env.
 
